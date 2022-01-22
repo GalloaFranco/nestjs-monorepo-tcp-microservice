@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/client-tcp/src",
+  "monorepo": true,
+  "root": "apps/client-tcp",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/client-tcp/tsconfig.app.json"
+  },
+  "projects": {
+    "client-tcp": {
+      "type": "application",
+      "root": "apps/client-tcp",
+      "entryFile": "main",
+      "sourceRoot": "apps/client-tcp/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/client-tcp/tsconfig.app.json"
+      }
+    },
+    "microservice-tcp": {
+      "type": "application",
+      "root": "apps/microservice-tcp",
+      "entryFile": "main",
+      "sourceRoot": "apps/microservice-tcp/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/microservice-tcp/tsconfig.app.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+monorepo/node_modules
+
+# Generated build directory
+monorepo/dist
+
+# IDE files and directories
+.idea
+/.idea/workspace.xml
