@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
+    "format": "prettier --write \"apps/**/*.ts\"",
     "start:client": "nest start",
     "start:microservice": "nest start microservice-tcp",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
