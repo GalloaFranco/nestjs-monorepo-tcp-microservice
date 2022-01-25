@@ -13,13 +13,13 @@ export class AppService {
         host: '127.0.0.1',
         port: 3001,
       }
-    })
-
+    });
   }
 
-
   getRooster(): Observable<string> {
-    return this.client.send('getRooster', 'void')
-        .pipe( tap((value => console.log(value))));
+    return this.client.send('getRooster', '')
+        .pipe(
+            tap((value => console.log(value)))
+        );
   }
 }
